@@ -108,7 +108,8 @@
         });
 
         // Fetch and display GeoJSON features
-        fetch('https://raw.githubusercontent.com/ayush-bhattarai-project/geog485_la_metro/main/bus_ridership.geojson')
+        // https://raw.githubusercontent.com/ayush-bhattarai-project/geog485_la_metro/main/
+        fetch('bus_ridership.geojson')
             .then(response => response.json())
             .then(data => {
                 L.geoJSON(data, {
